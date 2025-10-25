@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #262525; /* tu color preferido */
+  background-color: #262525; 
 }
 /*Hero*/
 .hero-container {
@@ -21,7 +21,7 @@ body {
   padding-bottom: 5px;
   background-position: center 30%;
   height: 85vh; /*  recorta visualmente la parte de abajo */
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3); /* oscurece la imagen para mejorar la legibilidad */
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3); /* oscurece la imagen */
 }
 
 

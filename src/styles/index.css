@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #121212; /* tu color preferido */
+  background-color: #c1bdbd;
   font-family: 'Raleway', sans-serif;
-  color: white; /* opcional */
+  color: rgb(0, 0, 0); 
+  height: 100%; /* necesario para que flex funcione */
 }

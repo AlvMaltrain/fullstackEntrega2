@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/homeIMG/logo.png";
 import "../styles/navbar.css"
 
@@ -12,8 +12,17 @@ export default function Navbar() {
 
   <nav className="nav-center">
     <ul className="nav-links">
-      <li><Link className="active" to="/">Home</Link></li>
-      <li><Link to="/buscar-bandas">Buscar Bandas</Link></li>
+      <li>
+        <NavLink to ="/"
+         className = {({ isActive }) => (isActive ? "active" : "")}> Home </NavLink></li>
+      <li>
+  <NavLink 
+    to="/buscar-bandas"
+    className={({ isActive }) => (isActive ? "active" : "")}
+    onClick={() => window.scrollTo(0, 0)}>
+    Explorar Bandas
+  </NavLink>
+</li>
     </ul>
   </nav>
 

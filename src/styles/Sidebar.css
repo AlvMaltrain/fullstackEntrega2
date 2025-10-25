@@ -1,0 +1,63 @@
+.buscar-bandas-page{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    padding:40px;
+}
+
+.sidebar-buscar {
+  display: flex;                  /* activa flexbox */
+  justify-content: center;        /* centra horizontalmente */
+  align-items: center;            /* alinea verticalmente */
+  gap: 100px;                      /* espacio entre los inputs y el botón */
+
+  width: 100%;
+  padding: 30px 40px;
+  background-color: #262525;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-buscar .filtros-lista {
+  display: flex;
+  flex-direction: row; /* los filtros en linea */
+  gap: 50px; /* separación entre filtros */
+  list-style: none; /* quita los puntos */
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.sidebar-buscar .filtros-lista li {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 0;
+}
+
+.sidebar-buscar input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.sidebar-buscar genero{
+    margin-left: 15px;
+}
+
+.sidebar-buscar button {
+  padding: 8px 16px;
+  background-color: #e38e04;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-buscar button:hover {
+  background-color: #ff9f00;
+}
