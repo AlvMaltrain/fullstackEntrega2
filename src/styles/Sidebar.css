@@ -1,53 +1,69 @@
+/* Contenedor de la barra (mismo look que artistas) */
 .buscar-bandas-page{
-    display: flex;
-    justify-content: center;
-    gap:50px;
-    padding:40px;
+  display: flex;
+  justify-content: center;
+  gap:50px;
+  padding:40px;
 }
 
 .sidebar-buscar {
-  display: flex;                  /* activa flexbox */
-  justify-content: center;        /* centra horizontalmente */
-  align-items: center;            /* alinea verticalmente */
-  gap: 100px;                      /* espacio entre los inputs y el botón */
-
+  display: flex;
+  flex-wrap: wrap;                 /* permite saltar de línea */
+  justify-content: center;         /* centrado como artistas */
+  align-items: center;
+  gap: 24px 50px;                  /* mismo espaciamiento */
   width: 100%;
   padding: 30px 40px;
   background-color: #262525;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: #fff;
 }
 
+/* Lista de filtros en línea, con wrap */
 .sidebar-buscar .filtros-lista {
   display: flex;
-  flex-direction: row; /* los filtros en linea */
-  gap: 50px; /* separación entre filtros */
-  list-style: none; /* quita los puntos */
+  flex-direction: row;
+  flex-wrap: wrap;                 /* se apila en móviles */
+  gap: 24px 50px;
+  list-style: none;
   padding: 0;
   margin: 0;
   align-items: center;
 }
 
+/* Cada ítem: texto + input en línea (idéntico al label de artistas) */
 .sidebar-buscar .filtros-lista li {
   display: flex;
   align-items: center;
-  color: white;
+  gap: 8px;                        /* espacio entre texto e input */
+  color: #fff;
   margin: 0;
+  font-size: 14px;
 }
 
+/* Inputs oscuros */
 .sidebar-buscar input {
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
   border: none;
   outline: none;
   font-size: 14px;
-  margin-left: 5px;
+  background: #111;
+  color: #fff;
+  min-width: 190px;                /* ancho cómodo */
 }
 
-.sidebar-buscar genero{
-    margin-left: 15px;
+.sidebar-buscar input::placeholder {
+  color: #9a9a9a;
 }
 
+/* Si usas una clase .genero, que sea con punto */
+.sidebar-buscar .genero {
+  margin-left: 15px;
+}
+
+/* Botones: mismo estilo y hover que artistas */
 .sidebar-buscar button {
   padding: 8px 16px;
   background-color: #e38e04;
@@ -55,9 +71,27 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .sidebar-buscar button:hover {
   background-color: #ff9f00;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+}
+
+/* Responsive como artistas */
+@media (max-width: 900px) {
+  .sidebar-buscar {
+    justify-content: flex-start;
+    gap: 16px 20px;
+    padding: 20px;
+  }
+  .sidebar-buscar .filtros-lista {
+    gap: 16px 20px;
+    justify-content: flex-start;
+  }
+  .sidebar-buscar .filtros-lista li {
+    width: 100%;                   /* cada campo toma una fila */
+  }
 }

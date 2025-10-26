@@ -8,6 +8,8 @@ import ArtistasDestacados from "../components/ArtistasDestacados.jsx";
 import "../styles/artistasDestacados.css"
 import "../styles/bandasDestacadas.css"
 import "../styles/home.css"
+import React from "react";
+
 
 export default function Home() {
   return (

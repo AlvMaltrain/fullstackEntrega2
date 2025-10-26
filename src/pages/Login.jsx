@@ -1,10 +1,11 @@
-import Navbar from "../components/Navbar";
+import React from "react";
+
 
 export default function Login() {
   return (
     <div>
-      <Navbar />
-      <h1>Página Login</h1>
+      <h1>Página de Inicio de Sesión</h1>
+      {/* Aquí iría el formulario de inicio de sesión */}
     </div>
   );
 }

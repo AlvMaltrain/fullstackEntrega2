@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../styles/bandasDestacadas.css";
 
+
+
 export default function BandasDestacadas({ bandas, titulo = "Bandas Destacadas", layout = "vertical" }) {
   const [bandaSeleccionada, setBandaSeleccionada] = useState(null); // nueva variable para el modal
 

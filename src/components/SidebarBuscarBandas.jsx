@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/Sidebar.css";
+import React from "react";
 
 export default function SidebarBuscarBandas({ filtros, setFiltros, aplicarFiltro}) {
 //Manejamos los cambios en los inputs

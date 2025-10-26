@@ -5,6 +5,8 @@ import SidebarBuscarBandas from "../components/SidebarBuscarBandas";
 import BandasDestacadas from "../components/BandasDestacadas";
 import { Bandas, buscarBandas } from "../data/data";
 import "../styles/buscarBandas.css";
+import React from "react";
+
 
 export default function BuscarBandas() {
   //  Estado de filtros (valores escritos por el usuario)
@@ -38,7 +40,7 @@ export default function BuscarBandas() {
   return (
     <div className="app-container">
       <Navbar />
-      <h1>Página Buscar Bandas</h1>
+      <h1>Buscar Artistas</h1>
 
       {/* Sidebar con filtros */}
       <SidebarBuscarBandas

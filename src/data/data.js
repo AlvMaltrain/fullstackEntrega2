@@ -27,12 +27,14 @@ import imgMetalProgresivo from "../assets/buscarBandasIMG/imgMetalProgresivo.jpg
 import imgHipHop from "../assets/buscarBandasIMG/imgHipHop.jpg"
 
 
+
+
 export const Artistas = [
-    {id:1, nombre:"Giancarlo Stanton",instrumento:"Guitarra",ocupacion: "Guitarrista", ciudad: "El Tabo",descripcion:"Apasionado guitarrista de El Tabo, con estilo versátil y gran energía en el escenario. Busca compartir su talento y crear nuevos proyectos musicales." ,image: guitarrista},
-    {id:2, nombre:"Mike Trout", instrumento:"Bajo", ocupacion: "Bajista", ciudad: "Cobquecura", descripcion: "Bajista originario de Cobquecura, con un sonido sólido y rítmico que da fuerza a cada presentación. Destacado por su creatividad y compromiso musical.",image: bajista},
-    {id:3, nombre:"Mookie Betts", instrumento:"Batería", ocupacion: "Baterista", ciudad: "Puerto Montt",descripcion:"Baterista de Puerto Montt, apasionado por marcar el pulso y la energía en cada interpretación. Su estilo combina técnica, dinamismo.",image: baterista},
-    {id:4, nombre:"Ashley Young", instrumento:"Voz", ocupacion: "Vocalista", ciudad: "San Antonio",descripcion:"Vocalista de San Antonio, destaca por su voz potente y versátil. Su carisma en el escenario la convierte en el alma de cada banda.",image: vocalista},
-    {id:5, nombre:"Pedro Porro", instrumento:"Teclado", ocupacion: "Tecladista", ciudad: "Chiloé", descripcion:"Tecladista proveniente de Chiloé, combina creatividad y técnica. Su estilo versátil enriquece los arreglos musicales de las bandas en las que participa.", image: tecladista},
+    {id:1, nombre:"Giancarlo Stanton",instrumento:"Guitarra",ocupacion: "Guitarrista", ciudad: "El Tabo",descripcion:"Apasionado guitarrista de El Tabo, con estilo versátil y gran energía en el escenario. Busca compartir su talento." ,image: guitarrista},
+    {id:2, nombre:"Mike Trout", instrumento:"Bajo", ocupacion: "Bajista", ciudad: "Cobquecura", descripcion: "Bajista originario de Cobquecura, con un sonido sólido y rítmico que da fuerza a cada presentación. Muy versatil.",image: bajista},
+    {id:3, nombre:"Mookie Betts", instrumento:"Batería", ocupacion: "Baterista", ciudad: "Puerto Montt",descripcion:"Baterista de Puerto Montt, apasionado por marcar el pulso y la energía en cada interpretación. Estilo variado.",image: baterista},
+    {id:4, nombre:"Ashley Young", instrumento:"Voz", ocupacion: "Vocalista", ciudad: "San Antonio",descripcion:"Vocalista de San Antonio, destaca por su voz potente y versátil. Gran carisma dentro de cada escenario que pisa.",image: vocalista},
+    {id:5, nombre:"Pedro Porro", instrumento:"Teclado", ocupacion: "Tecladista", ciudad: "Chiloé", descripcion:"Tecladista proveniente de Chiloé, combina creatividad y técnica. Gran pasión por cada nota aplicada dentro del mastil.", image: tecladista},
 
 ]
 
@@ -50,7 +52,7 @@ export const buscarBandas = [
     nombre: "Solar Flare", 
     ciudad: "Santiago", 
     estilo: "Indie Rock", 
-    descripcion: "Banda con riffs frescos y letras introspectivas que exploran temas de juventud, cambio y autodescubrimiento. Su sonido combina guitarras brillantes y atmósferas melancólicas, creando un viaje emocional entre la energía del indie moderno y la nostalgia de lo cotidiano.", 
+    descripcion: "Banda con riffs frescos y letras introspectivas que exploran temas de juventud, cambio y autodescubrimiento. Su sonido combina guitarras brillantes y atmósferas melancólicas.", 
     integrantes: 4,
     buscan: "Bajista",
     concierto: "Bar Loreto - 2 Nov",
@@ -209,6 +211,118 @@ export const buscarBandas = [
     buscan: "Productor",
     concierto: "Centro Cultural Valpo - 22 Dic",
     image: imgHipHop 
+  }
+];
+
+import CamilaRivera from "../assets/buscarArtistasIMG/CamilaRiveraIMG.jpg"
+import DiegoFuentes from "../assets/buscarArtistasIMG/DiegoFuentesIMG.jpg"
+import AnaBeltran from "../assets/buscarArtistasIMG/AnaBeltranIMG.webp"
+import FelipeContreras from "../assets/buscarArtistasIMG/FelipeContrerasIMG.jpg"
+import ValentinaSoto from "../assets/buscarArtistasIMG/ValentinaSotoIMG.jpg"
+import JavierOrtiz from "../assets/buscarArtistasIMG/JavierOrtizIMG.avif"
+import ConstanzaMella from "../assets/buscarArtistasIMG/ConstanzaMellaIMG.jpg"
+import TomásAguilera from "../assets/buscarArtistasIMG/TomasAguileraIMG.jpg"
+import IsabelNunez from "../assets/buscarArtistasIMG/IsabelNuñezIMG.avif"
+import RodrigoParedes from "../assets/buscarArtistasIMG/RodrigoParedesIMG.webp"
+import MariaJoseVera from "../assets/buscarArtistasIMG/MariaJoseVeraIMG.jpeg"
+import LucasFernández from "../assets/buscarArtistasIMG/LucasFernandezIMG.jpg"
+
+export const buscarArtistas = [
+  {
+    id: 1,
+    nombre: "Camila Rivera",
+    instrumento: "Voz",
+    ciudad: "Santiago",
+    descripcion: "Cantante versátil con experiencia en pop/rock e indie. Manejo de armonías y coros.",
+    image: CamilaRivera
+  },
+  {
+    id: 2,
+    nombre: "Diego Fuentes",
+    instrumento: "Guitarra líder",
+    ciudad: "Valparaíso",
+    descripcion: "Guitarrista con enfoque en riffs melódicos y solos; pedales de modulación y delay.",
+    image: DiegoFuentes
+  },
+  {
+    id: 3,
+    nombre: "Ana Beltrán",
+    instrumento: "Bajo",
+    ciudad: "Antofagasta",
+    descripcion: "Bajista con groove funk/rock, buen timing y experiencia en estudio.",
+    image: AnaBeltran
+  },
+  {
+    id: 4,
+    nombre: "Felipe Contreras",
+    instrumento: "Batería",
+    ciudad: "Coquimbo",
+    descripcion: "Baterista sólido, click track, doble bombo intermedio y arreglos dinámicos.",
+    image: FelipeContreras
+  },
+  {
+    id: 5,
+    nombre: "Valentina Soto",
+    instrumento: "Teclados",
+    ciudad: "Calama",
+    descripcion: "Sintetizadores, pianos y pads; arreglos para synthpop, indie y baladas.",
+    image: ValentinaSoto
+  },
+  {
+    id: 6,
+    nombre: "Javier Ortiz",
+    instrumento: "Guitarra rítmica",
+    ciudad: "La Serena",
+    descripcion: "Rítmico con buen groove, coros básicos y conocimiento de armonía funcional.",
+    image: JavierOrtiz
+  },
+  {
+    id: 7,
+    nombre: "Constanza Mella",
+    instrumento: "Saxo alto",
+    ciudad: "Puerto Montt",
+    descripcion: "Saxofonista con formación jazz, improvisación modal y bossa/latin.",
+    image: ConstanzaMella
+  },
+  {
+    id: 8,
+    nombre: "Tomás Aguilera",
+    instrumento: "Percusión",
+    ciudad: "Temuco",
+    descripcion: "Cajón, congas y accesorios; refuerza grooves en formatos acústicos.",
+    image: TomásAguilera
+  },
+  {
+    id: 9,
+    nombre: "Isabel Núñez",
+    instrumento: "Voz",
+    ciudad: "Concepción",
+    descripcion: "Registro mezzo con proyección; repertorio pop-rock y power ballads.",
+    image: IsabelNunez
+  },
+  {
+    id: 10,
+    nombre: "Rodrigo Paredes",
+    instrumento: "Bajo",
+    ciudad: "Santiago",
+    descripcion: "Bajo eléctrico 4/5 cuerdas, slap básico y líneas melódicas para indie/funk.",
+    image: RodrigoParedes
+  },
+  {
+    id: 11,
+    nombre: "María José Vera",
+    instrumento: "Violín",
+    ciudad: "Valparaíso",
+    descripcion: "Arreglos de cuerdas para pop/folk; lectura a primera vista y home studio.",
+    image: MariaJoseVera
+  },
+  {
+    id: 12,
+    nombre: "Lucas Fernández",
+    instrumento: "Guitarra líder",
+    ciudad: "Iquique",
+    descripcion: "Lead con overdrive clásico, influencia blues/rock y manejo de improvisación.",
+    image: LucasFernández
   }
 ];
 
