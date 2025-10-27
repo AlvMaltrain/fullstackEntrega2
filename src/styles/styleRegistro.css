@@ -44,7 +44,7 @@ form select {
 /* Botones */
 button {
   padding: 10px 25px;
-  background-color: #e38e04;
+  background-color: #5cb85c;
   color: white;
   border: none;
   border-radius: 5px;
@@ -55,7 +55,7 @@ button {
 }
 
 button:hover {
-  background-color: #e38e04;
+  background-color: #4cae4c;
 }
 
 /* Botones de enlace dentro del formulario */
