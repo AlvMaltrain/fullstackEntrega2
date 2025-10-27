@@ -1,7 +1,7 @@
 /* ==== Barra de filtros para Explorar Artistas (usa tu markup actual) ==== */
 .sidebar-filtros {
   display: flex;
-  flex-wrap: wrap;             /* permite que los labels salten de línea si falta espacio */
+  flex-wrap: wrap;             /* permite que los labels salten de linea si falta espacio */
   align-items: center;
   justify-content: center;     /* centrado como en Buscar Bandas */
   gap: 24px 50px;              /* espacio entre campos (filas x columnas) */
@@ -39,12 +39,12 @@
 .sidebar-filtros input[type="text"] {
   padding: 6px 10px;
   border-radius: 6px;
-  border: none;        /* igual que en Buscar Bandas */
+  border: none;       
   outline: none;
   font-size: 14px;
   background: #111;
   color: #fff;
-  min-width: 190px;    /* ancho cómodo para que no queden microscópicos */
+  min-width: 190px;    
 }
 
 .sidebar-filtros input::placeholder {

@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import "../styles/hero.css"
 import Footer from "../components/Footer";
@@ -10,13 +11,13 @@ import "../styles/bandasDestacadas.css"
 import "../styles/home.css"
 import React from "react";
 
-
 export default function Home() {
+  const navigate = useNavigate(); // 👈 Hook de React Router
+
   return (
-    <div className="app-container"> {/* Contenedor principal que controla altura */}
+    <div className="app-container">
       <Navbar />
 
-      {/* Contenido principal crece y empuja el footer */}
       <main className="main-content">
         <section className="hero-container">
           <div className="hero-content">
@@ -29,10 +30,10 @@ export default function Home() {
               Filtra por estilo, ciudad o instrumento y encuentra tu banda.<br />
             </p>
             <div className="botonera">
-              <button className="btn" onClick={() => window.location.href='/registro'}>
+              <button className="btn" onClick={() => navigate("/registro")}>
                 Regístrate aquí
               </button>
-              <button className="btn-2" onClick={() => window.location.href='/login'}>
+              <button className="btn-2" onClick={() => navigate("/login")}>
                 Iniciar Sesión
               </button>
             </div>
@@ -47,4 +48,5 @@ export default function Home() {
     </div>
   );
 }
+
 
