@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/styleRegistro.css';
 
 function Registro() {
@@ -37,6 +37,8 @@ function Registro() {
     setEdad('');
     setInstrumento('');
   };
+
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -96,6 +98,7 @@ function Registro() {
 
       localStorage.setItem('usuarios', JSON.stringify(usuarios));
       alert('¡Registro exitoso!');
+      navigate('/login');
       resetForm();
     }
   };

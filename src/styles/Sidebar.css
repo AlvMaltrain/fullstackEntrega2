@@ -24,7 +24,7 @@
 .sidebar-buscar .filtros-lista {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;                 /* se apila en móviles */
+  flex-wrap: wrap;                 /* se apila en moviles */
   gap: 24px 50px;
   list-style: none;
   padding: 0;
@@ -32,7 +32,7 @@
   align-items: center;
 }
 
-/* Cada ítem: texto + input en línea (idéntico al label de artistas) */
+
 .sidebar-buscar .filtros-lista li {
   display: flex;
   align-items: center;
@@ -58,7 +58,7 @@
   color: #9a9a9a;
 }
 
-/* Si usas una clase .genero, que sea con punto */
+
 .sidebar-buscar .genero {
   margin-left: 15px;
 }

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "../styles/artistasDestacados.css";
 
 export default function ArtistasDestacados({
-  artistas = [],
-  titulo = "Artistas Destacados",
-  layout = "vertical",
-  placeholderImage // imagen por defecto si algún artista no trae image
+  artistas = [], //prop
+  titulo = "Artistas Destacados", //prop
+  layout = "vertical", //prop 
+  placeholderImage // imagen por defecto si algún artista no trae image //prop
 }) {
   const [artistaSeleccionado, setArtistaSeleccionado] = useState(null);
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import SidebarBuscarBandas from "../src/components/SidebarBuscarBandas"; // <-- ajusta si fuera necesario
+import SidebarBuscarBandas from "../src/components/SidebarBuscarBandas"; // 
 
 // Wrapper para simular el componente padre con estado real
 function Wrapper({ initial = { estilo: "", ciudad: "" }, onFiltrar = () => {} }) {

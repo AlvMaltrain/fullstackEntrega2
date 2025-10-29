@@ -12,7 +12,7 @@ import "../styles/home.css"
 import React from "react";
 
 export default function Home() {
-  const navigate = useNavigate(); // 👈 Hook de React Router
+  const navigate = useNavigate(); // Hook de React Router
 
   return (
     <div className="app-container">

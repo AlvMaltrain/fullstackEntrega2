@@ -34,7 +34,7 @@ function Login() {
 
     if (usuarios[usernameInput].password === passwordInput) {
       alert('¡Inicio de sesión exitoso!');
-      navigate('/explorar-bandas');
+      navigate('/');
     } else {
       alert('Contraseña incorrecta'); 
       setErrorPassword('Contraseña incorrecta');

@@ -49,7 +49,7 @@ body {
   margin-bottom: 80px;
 }
 
-/* --- SOLUCIÓN AQUÍ --- */
+
 /* Contenedor de los botones */
 .botonera {
   display: flex; /* Pone los botones en fila */
@@ -81,7 +81,7 @@ body {
 }
 
 .btn-2 {
-  /* Se quitó 'gap: 20px;' y 'margin-left: 20px;' de aquí */
+
   background-color: #e38e04;
   color: white;
   border: none;
